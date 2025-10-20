@@ -44,9 +44,9 @@ jobs:
                 uses: codescan-io/codescan-scanner-action@test-bug-fixes
                 with:
                     scanChangedFilesOnly: false
-                    generateSarifFile: false
-                    failOnRedQualityGate: false
-                    generateReportFile: false
+                    generateSarifFile: true
+                    failOnRedQualityGate: true
+                    generateReportFile: true
                     login: ${{ secrets.CODESCAN_AUTH_TOKEN }}
                     organization: ${{ secrets.CODESCAN_ORGANIZATION_KEY }}
                     projectKey: ${{ secrets.CODESCAN_PROJECT_KEY }}
