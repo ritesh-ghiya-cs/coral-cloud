@@ -49,7 +49,7 @@ jobs:
                     scanChangedFilesOnly: false
                     generateSarifFile: false
                     failOnRedQualityGate: false
-                    generateReportFile: false
+                    generateReportFile: true
                     login: ${{ secrets.CODESCAN_AUTH_TOKEN }}
                     organization: ${{ secrets.CODESCAN_ORGANIZATION_KEY }}
                     projectKey: ${{ secrets.CODESCAN_PROJECT_KEY }}
